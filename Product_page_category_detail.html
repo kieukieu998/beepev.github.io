@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product_page_category_detail</title>
+    <link rel="stylesheet" href="vender/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/home_moto.css">
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer_moto.css">
+    <link rel="stylesheet" href="style/slide.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/productPageCategory.css">
+    <link rel="stylesheet" href="style/responsive/res_motobike.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="fix">
+        <section class="header fixed-top">
+            <div class="header-menu show-desktop">
+                <div class="container-fluid">
+                    <h1 id="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <div class="menu-list">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="index.html" class="main-link active" >Available Now</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="sub_menu">
+                                    <li><a href="Product_page_category_detail.html">Today's Offers</a></li>
+                                    <li><a href="Order_choose_product.html">Get A Quote</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="product_page.html" class="main-link">Pre-Order</a>
+                                <i class="fal fa-chevron-down"></i>
+                                <ul class="sub_menu">
+                                    <li><a href="Product_page_category_detail.html">New Releases</a></li>
+                                    <li><a href="Product_page_category_detail.html">VinFast</a></li>
+                                    <li><a href="Product_page_category_detail.html">Honda</a></li>
+                                    <li><a href="Product_page_category_detail.html">Pega</a></li>
+                                    <li><a href="Product_page_category_detail.html">See all</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-link">Learn More About E-Motorbikes</a> <i class="fal fa-chevron-down"></i>
+                                <ul class="sub_menu">
+                                    <li><a href="learn_more_about_EVs.html">EV Guide</a></li>
+                                    <li><a href="blog_EV_guide.html">Usage Tips</a></li>
+                                    <li><a href="blog_EV_guide.html">Charging basis</a></li>
+                                    <li><a href="Product_page_category_detail.html">Accessories</a></li>
+                                    <li><a href="blog_EV_guide.html">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="main-link" >Contact Us</a> <i class="fal fa-chevron-down"></i>
+                                <ul class="sub_menu">
+                                    <li><a href="contact.html">Contact Form</a></li>
+                                    <li><a href="FAQs.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="sub" onclick="call_modal();">Subcribe Now <i class="far fa-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <div class="language">
+                                    <select class="language_select" id="Select1">
+                                        <option value="en">ENG</option>
+                                        <option value="vn">VN</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu show-mobile">
+                <div class="wrap">
+                    <div class="menu-mobile">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="k-btn-menu" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="accordion_menu" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="heading_1">
+                                                    <div class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion_menu" href="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                                                            Available Now
+                                                            <i class="fal fa-chevron-down k-down"></i>
+                                                            <i class="fal fa-chevron-up k-up"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <div id="collapse_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_1">
+                                                    <div class="down">
+                                                        <a href="Product_page_category_detail.html">Today's Offers</a>
+                                                        <a href="Order_choose_product.html">Get A Quote</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="heading_2">
+                                                    <div class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion_menu" href="#collapse_2" aria-expanded="true" aria-controls="collapse_2">
+                                                            Pre-Order
+                                                            <i class="fal fa-chevron-down k-down"></i>
+                                                            <i class="fal fa-chevron-up k-up"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <div id="collapse_2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_2">
+                                                    <div class="down">
+                                                        <a href="Product_page_category_detail.html">New Releases</a>
+                                                        <a href="Product_page_category_detail.html">VinFast</a>
+                                                        <a href="Product_page_category_detail.html">Honda</a>
+                                                        <a href="Product_page_category_detail.html">Pega</a>
+                                                        <a href="Product_page_category_detail.html">See all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="heading_3">
+                                                    <div class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion_menu" href="#collapse_3" aria-expanded="true" aria-controls="collapse_3">
+                                                            Learn More About EVs
+                                                            <i class="fal fa-chevron-down k-down"></i>
+                                                            <i class="fal fa-chevron-up k-up"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <div id="collapse_3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_3">
+                                                    <div class="down">
+                                                        <a href="blog_EV_guide.html">EV Guide</a>
+                                                        <a href="blog_EV_guide.html">Usage Tips</a>
+                                                        <a href="blog_EV_guide.html">Charging basis</a>
+                                                        <a href="Product_page_category_detail.html">Accessories</a>
+                                                        <a href="blog_EV_guide.html">Blog</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="heading_4">
+                                                    <div class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion_menu" href="#collapse_4" aria-expanded="true" aria-controls="collapse_4">
+                                                            Contact. Us
+                                                            <i class="fal fa-chevron-down k-down"></i>
+                                                            <i class="fal fa-chevron-up k-up"></i>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <div id="collapse_4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_4">
+                                                    <div class="down">
+                                                        <a href="contact.html">Contact Form</a>
+                                                        <a href="FAQs.html">FAQs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subscribe">
+                                                <p>Subscribe</p>
+                                                <a href="#" class="sub close k-close" onclick="call_modal();" data-dismiss="modal">Type your email in <i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="" class="logo-mobile">
+                        </a>
+                    </div>
+                    <div class="menu-laguage">
+                        <div class="language">
+                            <select class="language_select" id="Select2">
+                                <option value="en">ENG</option>
+                                <option value="vn">VN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="hero">
+        <img src="images/asset-1.png" alt="" >
+        <div class="soft">
+            <h6 class="title-soft">Lọc nhanh</h6>
+            <div class="soft-item">
+                <form action="">
+                    <div class="custom-select-option">
+                        <label for="trademark">Chọn thương hiệu:</label>
+                        <select name="trademark" id="trademark">
+                            <option value="">Tất cả</option>
+                            <option value="" selected>Honda</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-option">
+                        <label for="color">Chọn màu sắc:</label>
+                        <select name="color" id="color">
+                            <option value="">Tất cả</option>
+                            <option value="">Đỏ</option>
+                            <option value="">Xanh</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-option">
+                        <label for="pin">Chọn loại pin:</label>
+                        <select name="pin" id="pin">
+                            <option value="">Tất cả</option>
+                            <option value="">Ắc quy</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-option">
+                        <label for="engine">Chọn động cơ:</label>
+                        <select name="engine" id="engine">
+                            <option value="">Tất cả</option>
+                            <option value="">Động cơ</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-option">
+                        <label for="cubic">Chọn phân khối:</label>
+                        <select name="cubic" id="cubic">
+                            <option value="">Tất cả</option>
+                            <option value="">50</option>
+                            <option value="">100</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="discover">
+            <div class="container">
+                <div class="row">
+                    <div class="discover_list">
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Honda EV-neo</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/6.png" alt="" class="img-fluid">
+                                <p class="name">Honda EV-neo</p>
+                            </div>
+                            <div class="new">
+                                <img src="images/new.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Ecooter E2 M</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/9.png" alt="" class="img-fluid">
+                                <p class="name">Ecooter E2 M</p>
+                            </div>
+                        </div>
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Honda Mono</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/7.png" alt="" class="img-fluid">
+                                <p class="name">Honda Mono</p>
+                            </div>
+                            <div class="new">
+                                <img src="images/new.svg" alt="">
+                            </div>
+                            <div class="sale">
+                                <p class="t-sale">50% <span>off</span></p>
+                                <img src="images/sale931.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Honda EV-neo</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/6.png" alt="" class="img-fluid">
+                                <p class="name">Honda EV-neo</p>
+                            </div>
+                            <div class="new">
+                                <img src="images/new.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Ecooter E2 M</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/9.png" alt="" class="img-fluid">
+                                <p class="name">Ecooter E2 M</p>
+                            </div>
+                        </div>
+                        <div class="discover_list_item">
+                            <div class="bg-item">
+                                <p class="title-des">Honda Mono</p>
+                                <div class="description">
+                                    <p>from <b><sup>$</sup>1,000</b></p>
+                                    <p>range from xxx km</p>
+                                    <a href="product_page.html">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <img src="images/motobike/7.png" alt="" class="img-fluid">
+                                <p class="name">Honda Mono</p>
+                            </div>
+                            <div class="new">
+                                <img src="images/new.svg" alt="">
+                            </div>
+                            <div class="sale">
+                                <p class="t-sale">50% <span>off</span></p>
+                                <img src="images/sale931.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="content">
+            <div class="footer_top show-desktop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p>Customers</p>
+                            <div class="footer_info">
+                                <a href="contact.html">Contact Us</a>
+                                <a href="FAQs.html">FAQs</a>
+                                <a href="customer_policies.html">Customer Policies</a>
+                                <a href="customer_policies.html">Payment Policies</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Partners</p>
+                            <div class="footer_info">
+                                <a href="customer_policies.html">Become A Partner</a>
+                                <a href="customer_policies.html">Business Support</a>
+                                <a href="customer_policies.html">Partner Directory</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>About Us</p>
+                            <div class="footer_info">
+                                <a href="about_us.html">About BeepEV</a>
+                                <a href="customer_policies.html">Careers</a>
+                                <a href="customer_policies.html">Legal</a>
+                                <a href="customer_policies.html">Press</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Support</p>
+                            <div class="footer_info">
+                                <span>Hotline <br><b class="font-other">0123456789</b></span>
+                                <span>Email <br> <b class="font-other">contactus@abc.com</b></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Join us at</p>
+                            <div class="footer_info link">
+                                <a href="https://www.facebook.com/beepev.vn"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <p>Subscribe</p>
+                            <a href="#" class="sub" onclick="call_modal();">Type your email in <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top show-mobile">
+                <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <div class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Customers
+                                </a>
+                                <i class="fal fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="down">
+                                <a href="contact.html">Contact Us</a>
+                                <a href="FAQs.html">FAQs</a>
+                                <a href="customer_policies.html">Customer Policies</a>
+                                <a href="customer_policies.html">Payment Policies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <div class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                                    Partners
+                                </a>
+                                <i class="fal fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="down">
+                                <a href="customer_policies.html">Become A Partner</a>
+                                <a href="customer_policies.html">Business Support</a>
+                                <a href="customer_policies.html">Partner Directory</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <div class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                                    About Us
+                                </a>
+                                <i class="fal fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="down">
+                                <a href="about_us.html">About BeepEV</a>
+                                <a href="customer_policies.html">Careers</a>
+                                <a href="customer_policies.html">Legal</a>
+                                <a href="customer_policies.html">Press</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <div class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                    Support
+                                </a>
+                                <i class="fal fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="down">
+                                <div class="footer_info">
+                                    <span>Hotline <br><b class="font-other">0123456789</b></span>
+                                    <span>Email <br> <b class="font-other">contactus@abc.com</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="join">
+                        <p>Join us at</p>
+                        <div class="join-icon">
+                            <a href="https://www.facebook.com/beepev.vn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <p>Subscribe</p>
+                        <a href="#" class="sub" onclick="call_modal();">Type your email in <i class="far fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer_bottom_list">
+                        <div class="footer_bottom_list_item">
+                            <h1 id="logo-f">
+                                <a href="#"><img src="images/logo.png" alt="" class="logo-footer"></a>
+                            </h1>
+                            <p>© 2020 xxx. All Rights Reserved. Singapore Co. Reg. No XXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<span class="backtotop">
+            <a href=""><i class="fa fa-angle-up" style="font-size: 20px"></i></a>
+    </span>
+<div class="contact-modal">
+    <div class="box">
+        <input name="modal" type="checkbox" id="modal" class="hidden">
+        <label for="modal" class="label-show-modal" onclick="call_modal();"></label>
+        <div class="modal-show">
+            <div class="modal-show-inner">
+                <!--               <label for="modal" >&#10006;</label>-->
+                <a type="button" class="close" data-dismiss="modal" onclick="hide_modal();">&times;</a>
+                <h2 class="title-modal">JOIN OUR NEWSLETTER</h2>
+                <p class="des-title">Subscribe our newsletter to receive the latest news and exclusive offers every week. No spam.</p>
+                <div class="response"></div>
+                <div class="content">
+                    <form id="contactForm" method="POST">
+                        <div class="k-form-control">
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <br>
+                        </div>
+                        <div class="k-form-control">
+                            <a onclick="call_modal();" class="k-btn" style="cursor: pointer">SUBSCRIBE</a>
+                            <a href="#" onclick="hide_modal();" class="cancel">NO THANKS</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="vender/js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="vender/js/jquery-3.5.1.slim.min.js"></script>-->
+<script type="text/javascript" src="vender/js/popper.min.js"></script>
+<script type="text/javascript" src="vender/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/fontawesome.min.js"></script>
+<script type="text/javascript" src="vender/js/jquery.js"></script>
+<script type="text/javascript" src="js/backtotop.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/modal-show.js"></script>
+</body>
+</html>

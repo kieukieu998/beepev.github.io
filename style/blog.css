@@ -1,0 +1,704 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hero img{
+    width: 100%;
+}
+.blog{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    padding: 65px 0 65px 0;
+}
+.blog:after{
+    width: 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    /* bottom: 10%; */
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    background-color: #3fd0c9;
+    z-index: 2;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #041E4F;
+    content: "|"!important;
+}
+.content-customer{
+    padding: 0  0 3% 0;
+}
+.blog .breadcrumb{
+    background-color: #fff;
+    padding-right: 0;
+    padding-left: 0;
+}
+.blog .breadcrumb li a,
+.blog h2.title,
+.blog p.des{
+    color: #000000;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: Montserrat-Bold, sans-serif;
+    margin-bottom: 0;
+}
+.blog p.des{
+    font-family: Nunito-Regular, sans-serif;
+}
+.blog .breadcrumb li.active{
+    color: #041E4F;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: Montserrat-Bold, sans-serif;
+}
+.item_blog{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.item_blog .item_more{
+    width: calc((100% - 15px) / 2);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+}
+.item_blog .item_more .list_blog div{
+    padding: 9px 15px;
+}
+.item_blog .item_more:first-child .list_blog{
+    background-color: #92D669;
+}
+.item_blog .item_more:first-child .list_blog img{
+    width: 100%;
+}
+.item_blog .item_more:last-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item_blog .item_more:last-child .list_blog{
+    width: calc((100% - 15px) / 2);
+    margin-bottom: 15px;
+    background-color: #B2E295;
+}
+.item_blog .item_more:last-child .list_blog:nth-child(3){
+    margin-bottom: 0;
+}
+.item_blog .item_more:last-child .list_blog:last-child{
+    margin-bottom: 0;
+}
+.item_blog .item_more h3.title_blog a,
+.item_blog .item_more h4.cont_blog a{
+    font-family: Montserrat-Bold, sans-serif;
+    color: #000;
+    transition: 0.4s;
+}
+.item_blog .item_more h3.title_blog a{
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.item_blog .item_more h4.cont_blog a{
+    font-size: 24px;
+    line-height: 29px;
+}
+.item_blog .item_more h3.title_blog a:hover,
+.item_blog .item_more h4.cont_blog a:hover{
+    opacity: 0.7;
+}
+
+.item_blog .item_more p.des_blog{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Nunito-Regular, sans-serif;
+    color: #000;
+}
+/*news blog*/
+.news-blog h5.title-new{
+    font-size: 24px;
+    line-height: 29px;
+    color: #041E4F;
+    font-family: Montserrat-Bold, sans-serif;
+    background-color: #DADADA;
+    padding: 5px 15px;
+}
+.list-item-new{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.item-new{
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 15px;
+    border-bottom: 1px solid #707070;
+    padding: 0 0 10px 0;
+}
+.item-new:last-child:nth-child(2n+1){
+    border: none;
+}
+.item-new a.news-blog{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Nunito-Regular, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding-left: 15px;
+}
+.item-new a.news-blog i{
+    transition: 0.4s;
+}
+.item-new a.news-blog:hover{
+    opacity: 0.8;
+    color: #041E4F;
+}
+.item-new a.news-blog:hover i{
+    color: #041E4F;
+}
+.item-new i{
+    color: #3FD0C9;
+}
+/*EVGuide*/
+.content .container .container_list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.content .content-left{
+    flex-basis: 75%;
+}
+.content .content-right{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.description p{
+    padding-left: 0;
+    padding-right: 0;
+}
+.title-alert{
+    background-color: #041E4F;
+    height: 53px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.title-alert p{
+    font-size: 14px;
+    line-height: 53px;
+    color: white;
+    font-family: Montserrat-Bold, sans-serif;
+}
+.content-right .EVGuide{
+    border: 1px solid #707070;
+    margin-bottom: 20px;
+}
+
+button.k-btn-menu i{
+    font-size: 20px;
+    color: #041E4F;
+}
+.content-right .modal-body .down a{
+    padding-left: 5px;
+}
+.content-right .modal-body .down a:hover{
+    background-color: #CBCBCC;
+}
+.content-right .modal-body .subscribe p{
+    font-size: 15px;
+    color: #041E4F;
+    font-family: Nunito-Bold, sans-serif;
+}
+.content-right .modal-body .subscribe a {
+    background-color: #041E4F;
+    color: #fff;
+    font-size: 10px;
+    padding: 3px 3px 3px 15px;
+    border-radius: 5px;
+}
+.content-right .modal-body .subscribe i {
+    color: #041E4F;
+    background-color: #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.content-right .panel-title {
+    display: flex;
+    justify-content: space-between;
+}
+.content-right .panel-title a:first-child{
+    width: 95%;
+}
+.content-right .panel-title a:last-child{
+    width: 5%;
+}
+.content-right .panel-title a {
+    color: #000000;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: Nunito-SemiBold, sans-serif;
+    display: block;
+    transition: 0.4s;
+    padding: 15px 15px;
+    border-bottom: 1px solid #707070;
+}
+.content-right .panel-title:hover a{
+    color: #3FD0C9;
+    border-color: transparent;
+}
+.content-right .panel-title
+.content-right .panel-title a i {
+    color: #041E4F;
+    font-weight: bold;
+}
+
+.content-right .down {
+    background-color: #DADADA;
+    padding: 5px 30px;
+}
+
+.content-right .down a {
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #041E4F;
+    padding: 8px 0 5px 0;
+    font-family: Nunito-Regular, sans-serif;
+}
+.content-right .EVGuide.other{
+    height: 595px;
+    background: #3fd0c9  url("../images/3301.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.content-right .EVGuide.other .group .text-group.other,
+.content-right .EVGuide.other .group .text-group.other_2{
+    position: absolute;
+    top: 13%;
+    left: 13.5%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 30px 15px 30px;
+    text-align: center;
+}
+.content-right .EVGuide .group .text-group p a{
+    color: #041E4F;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.content-right .EVGuide .group .text-group p a:hover{
+    opacity: 0.8;
+}
+.content-right .EVGuide.other .group .text-group.other_2{
+    top: 64%;
+    left: 0;
+    padding: 10px;
+}
+.content-right .EVGuide.other .group .text-group.other_2 p{
+    font-family: Montserrat-SemiBold, sans-serif;
+    color: #000;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.content-right .EVGuide.other .group .text-group.other p:first-child{
+    font-family: Montserrat-Black, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #041E4F;
+}
+.content-right .EVGuide.other .group .text-group.other p:last-child{
+    font-family: Montserrat-Black, sans-serif;
+    font-size: 57px;
+    line-height: 69px;
+    color: #041E4F;
+    margin-bottom: 0;
+}
+/*css left*/
+.content-left .EVGuide{
+    border: 1px solid #707070;
+}
+.content-left .EVGuide .title-alert{
+    display: flex;
+    justify-content: space-between;
+}
+.content-left .EVGuide .title-alert a{
+    font-size: 15px;
+    color: #fff;
+    font-family: Nunito-Italic, sans-serif;
+    line-height: 53px;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.content-left .EVGuide .title-alert a:hover{
+    color: #3FD0C9;
+}
+.content-left .EVGuide .group .group-item{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.content-left .EVGuide .group .group-item:last-child{
+    border: none;
+}
+.content-left .EVGuide .group .img-group{
+    flex-basis: 30%;
+    padding-left: 15px;
+
+}
+.content-left .EVGuide .group .text-group{
+    flex-basis: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-left .EVGuide .group .img-group{
+    position: relative;
+}
+.content-left .EVGuide .group .img-group .date-time{
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    background-color: #92D669;
+}
+.content-left .EVGuide .group .img-group .date-time p.date{
+    font-size: 10px;
+    color: #fff;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 0;
+    padding: 5px;
+    text-align: center;
+}
+.content-left .EVGuide .group .img-group .date-time p.time{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 5px;
+    text-align: center;
+}
+.content-left .EVGuide .group .img-group img{
+    width: 100%;
+    height: 100%;
+}
+.content-left .EVGuide .group .text-group p{
+    font-size: 15px;
+    line-height: 23px;
+    color: #000000;
+    font-family: Nunito-Regular, sans-serif;
+}
+.content-left .EVGuide .group .text-group .description h4.title{
+    font-size: 17px;
+    line-height: 23px;
+    color: #000;
+    font-family: Montserrat-SemiBold, sans-serif;
+    margin-bottom: 20px;
+}
+.content-left .EVGuide .group .text-group .link-down a{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Nunito-SemiBold, sans-serif;
+    color: #fff;
+    background: #3FD0C9;
+    display: inline;
+    padding: 5px 15px;
+    transition: 0.4s;
+}
+.content-left .EVGuide .group .text-group .link-down-other a{
+    font-size: 13px;
+    line-height: 20px;
+    font-family: Nunito-BoldItalic, sans-serif;
+    color: #041E4F;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.content-left .EVGuide .group .text-group .link-down-other a:hover{
+    color: #3FD0C9;
+}
+.content-left .EVGuide .group .text-group .link-down-other a i{
+    color: #3FD0C9;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.content-left .EVGuide .group .text-group .link-down a i{
+    margin-left: 15px;
+}
+.content-left .EVGuide .group .text-group .link-down a:hover{
+    opacity: 0.6;
+}
+.show-desktop{
+    display: block;
+}
+.show-mobile{
+    display: none;
+}
+/*CSS BLOG DETAIL*/
+.summary{
+    margin: 5% 0 3% 0;
+    position: relative;
+}
+.summary .text-content{
+    background-color: #DEF3D1;
+    padding: 30px 15px 5px 15px;
+}
+.summary.other .text-content{
+    background-color: #fff;
+    padding: 0px 15px 5px 15px;
+}
+.summary .text-content p.content{
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Nunito-Regular, sans-serif;
+    margin-bottom: 10px;
+}
+.summary .sticker{
+    background-color: #041E4F;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    top: -11%;
+    left: 2%;
+}
+.summary .sticker span{
+    color: #fff;
+    font-size: 18px;
+    font-family: Nunito-Regular, sans-serif;
+}
+img.shutterstock{
+    width: 100%;
+    height: auto;
+}
+.tips .text-content{
+    background-color: #DADADA;
+}
+.tips .sticker{
+    background-color: #92D669;
+}
+.tips .sticker span{
+    font-family: Montserrat-Bold, sans-serif;
+}
+.detail h5.title-new{
+    background-color: unset;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 10%;
+}
+.detail .list-item-new{
+    flex-direction: column;
+}
+.detail .list-item-new .item-new{
+    width: 100%;
+}
+.detail .list-item-new .item-new a.news-blog{
+    font-size: 15px;
+    line-height: 21px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 1920px) {
+
+}
+@media screen and (max-width: 1366px) {
+
+}
+@media screen and (max-width: 1024px) {
+    i.fal.fa-search {
+        display: none;
+    }
+    .content .content-left {
+        flex-basis: 65%;
+        padding-left: 0px;
+    }
+    .content .content-right {
+        flex-basis: 35%;
+    }
+    .content-right .EVGuide.other .group .text-group.other{
+        left: 23.5%;
+    }
+    .content-right .EVGuide.other {
+        height: 497px;
+        margin-bottom: 0;
+    }
+    .content-left .about .what-content .group-plus .text-group {
+        font-size: 12px;
+    }
+    .summary .sticker {
+        padding: 8px;
+        top: -8%;
+    }
+    .summary .sticker {
+        top: -9%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .content .container .container_list {
+        display: block;
+    }
+    .content-right .EVGuide {
+        margin-top: 20px;
+    }
+    .content .content-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-right .EVGuide.other .group .text-group.other {
+        left: 36.5%;
+    }
+    .content-right .EVGuide.other .group .text-group.other_2 {
+        top: 72%;
+    }
+    .item_blog {
+        flex-direction: column;
+    }
+    .item_blog .item_more {
+        width: 100%;
+        display: unset;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .item_blog .item_more:first-child .list_blog {
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .blog {
+        padding: 35px 0 65px 0;
+    }
+    .about:after {
+        transform: skewY(-8deg);
+    }
+    .content-customer{
+        padding: 0  0 3% 0;
+    }
+    .content-left .EVGuide .group .group-item {
+        display: block;
+    }
+    .content-left .EVGuide .group .img-group {
+        padding-right: 15px;
+    }
+    .content-left .EVGuide .group .text-group p {
+        margin-top: 15px;
+    }
+    .content-right .EVGuide.other .group .text-group.other {
+        left: 25.5%;
+    }
+    .content h3 {
+        margin: 0;
+        text-align: center;
+    }
+    .content-left .about .what-content p {
+        position: unset;
+    }
+    .title-alert p {
+        font-size: 13px;
+    }
+    .content-left .about .link a {
+        font-size: 11px;
+    }
+    .content-left .about .link i {
+        font-size: 11px;
+    }
+    .content-left .about .what-content .group-plus.battery .plus img {
+        margin-left: 78%;
+    }
+    .item_blog, .news-blog, .container_list, .info-blog{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .item_blog .item_more h4.cont_blog a {
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        display: block;
+    }
+    .item_blog .item_more h3.title_blog a {
+        font-size: 15px;
+    }
+    .item_blog .item_more p.des_blog {
+        text-align: center;
+    }
+    .item_blog .item_more .list_blog div {
+        padding: 9px 6px;
+    }
+    .item-new {
+        width: 100%;
+    }
+    .content-left .EVGuide .group .text-group .description h4.title {
+        margin-top: 15px;
+    }
+    .news-blog h5.title-new {
+        font-size: 21px;
+        line-height: 27px;
+    }
+    .item-new a.news-blog {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    /*blog detail*/
+    .summary {
+        margin: 10% 0 3% 0;
+    }
+    .blog .breadcrumb li a, .blog h2.title, .blog p.des {
+        line-height: 28px;
+    }
+    .summary .sticker {
+        top: -4%;
+        padding: 4px;
+    }
+    .summary .sticker span {
+        font-size: 16px;
+    }
+    .news-blog h5.title-new {
+        padding-left: 0;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width: 375px){
+    .content-right .EVGuide.other .group .text-group.other {
+        left: 23.5%;
+    }
+    .item_blog .item_more h3.title_blog a {
+        font-size: 13px;
+    }
+    .item_blog .item_more h4.cont_blog a {
+        font-size: 19px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width: 360px){
+    .content-right .EVGuide.other .group .text-group.other {
+        left: 23.5%;
+        top: 10%;
+    }
+    .content-right .EVGuide.other .group .text-group.other_2 {
+        top: 65%;
+    }
+    .summary .sticker span {
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 320px){
+    .content-right .EVGuide.other .group .text-group.other {
+        left: 17.5%;
+        top: 10%;
+    }
+    .summary .sticker {
+        top: -3%;
+    }
+}

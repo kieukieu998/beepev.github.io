@@ -1,0 +1,196 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+.k-mess{
+    color: #041E4F;
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.sale{
+    position: relative;
+}
+.t-sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #0b2e52;
+    text-align: center;
+}
+p.t-sale span{
+    font-size: 10px;
+}
+/*css product*/
+.discover .container{
+    border: none!important;
+}
+
+.soft{
+    width: 84%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: -12%;
+    z-index: 1;
+}
+.soft .soft-item form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.soft .soft-item form .custom-select-option{
+    width: calc((100% - 100px)/5);
+    display: flex;
+    flex-direction: column;
+}
+.custom-select-option label{
+    color: #041E4F;
+    font-size: 15px;
+    font-family: Nunito-Regular, sans-serif;
+}
+.custom-select-option select{
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #707070;
+    color: #041E4F;
+    font-size: 15px;
+    font-family: Nunito-Regular, sans-serif;
+}
+.custom-select-option select option{
+    padding: 5px;
+}
+.soft h6.title-soft{
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #041E4F;
+}
+.discover{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.discover:after{
+    width: 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    /* bottom: 10%; */
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    background-color: #3fd0c9;
+    z-index: 2;
+}
+.discover_list_item{
+    position: relative;
+}
+.discover_list_item .new{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: 0.4s;
+}
+.discover_list_item .sale{
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    transition: 0.4s;
+}
+
+.discover_list_item:hover .new,
+.discover_list_item:hover .sale{
+    opacity: 0;
+}
+/*responsive*/
+@media screen and (max-width: 1024px){
+    .soft {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .custom-select-option label,
+    .custom-select-option select{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+    .hero img {
+        width: 100%;
+        height: 208px;
+        object-fit: cover;
+    }
+    .soft {
+        width: 85%;
+        padding: 10px;
+        bottom: -100%;
+    }
+    .soft .soft-item form .custom-select-option {
+        width: calc((100% - 20px ) / 2);
+    }
+    .discover {
+        padding-top: 57%;
+    }
+    .discover_list_item .new {
+        left: 6%;
+    }
+    .discover_list_item .sale {
+        right: 5%;
+    }
+    .discover:after {
+        transform: skewY(-8deg);
+    }
+    .custom-select-option label {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .custom-select-option label {
+        font-size: 13px;
+    }
+    .custom-select-option select {
+        padding: 3px;
+        font-size: 13px;
+    }
+    .soft h6.title-soft {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .soft {
+        bottom: -87%;
+    }
+}
+@media screen and (max-width: 360px){
+
+}
+@media screen and (max-width: 320px){
+    .discover {
+        padding-top: 60%;
+    }
+}

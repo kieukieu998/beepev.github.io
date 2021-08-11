@@ -1,0 +1,246 @@
+
+/*css content*/
+/*discover*/
+.discover{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.discover .container{
+    border-bottom: 1px dashed gray;
+    padding-bottom: 3%;
+}
+h2.title_abroad{
+    font-size: 34px;
+    font-family: Montserrat-Black, sans-serif;
+    color: #041E4F;
+    text-align: center;
+    line-height: 45px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.discover_list{
+    display: flex;
+    width: 100%;
+}
+.discover_list_item{
+    width: calc((100% - 15px) / 3);
+    position: relative;
+}
+.bg-item {
+    background-color: #041E4F;
+    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 15px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.discover_list_item:hover .bg-item {
+    opacity: 1;
+}
+.discover_list_item:hover p.name{
+    opacity: 0;
+}
+.car-item {
+    position: absolute;
+    top: 17%;
+    left: 7%;
+    width: 100%;
+}
+.car-item img{
+    width: 248px;
+    height: 125px;
+}
+.car-item p.name{
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Nunito-Bold, sans-serif;
+    color: #041E4F;
+    margin-top: 5%;
+}
+.bg-item p.title-des{
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    font-family: Nunito-Bold, sans-serif;
+}
+.description p{
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    font-family: Nunito-SemiBold, sans-serif;
+    margin-bottom: 0;
+}
+.description p b{
+    font-size: 18px;
+    line-height: 24px;
+    color: #3FD0C9;
+    font-family: Nunito-Black, sans-serif;
+}
+.description a{
+    background-color: #32CB69;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: Nunito-SemiBold,sans-serif;
+    transition: 0.4s;
+
+}
+.description a:hover{
+    opacity: 0.8;
+}
+.discover_list_item.other i{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: #041E4F;
+}
+.discover_list_item.other a{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Nunito-Black, sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.discover_list_item.other a:hover{
+    color: #041E4F;
+}
+.discover_list_item.other .car-item{
+    background-color: #32CB69;
+    height: 150px;
+    border-radius: 5px;
+    width: 88%;
+}
+/*chargin*/
+.chargin .container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+.chargin .container .chargin_item{
+    width: 50%
+}
+.chargin .chargin_item img{
+    width: 100%;
+}
+.chargin .chargin_item h2.title_abroad{
+    text-align: left;
+    padding-bottom: 60px;
+}
+.chargin .chargin_item p{
+    font-size: 20px;
+    line-height: 27px;
+    font-family: Nunito-SemiBold, sans-serif;
+    max-width: 362px;
+    padding-bottom: 80px;
+}
+.chargin .chargin_item a{
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Nunito-SemiBold, sans-serif;
+    background-color: #32CB69;
+    padding: 10px 27px;
+    transition: 0.4s;
+}
+.chargin .chargin_item a:last-child{
+    background-color: #041E4F;
+    margin-left: 15px;
+}
+.chargin .chargin_item a:hover{
+    opacity: 0.8;
+}
+/*css benefits*/
+.benefits{
+    background-color: #E4E4E6;
+    padding: 80px 0;
+}
+.benefits_list{
+    display: flex;
+    justify-content: space-between;
+}
+.benefits_list_item{
+    width: calc((100% - 50px) / 3);
+}
+.benefits .benefits_list .benefits_list_item img{
+    width: auto;
+    display: inline-block;
+}
+.benefits .benefits_list .benefits_list_item h4{
+    padding-top: 30px;
+    padding-bottom: 32px;
+    font-size: 25px;
+    line-height: 34px;
+    color: #041E4F;
+    font-family: Nunito-Bold, sans-serif;
+}
+.benefits .benefits_list .benefits_list_item p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #041E4F;
+    font-family: Nunito-Regular, sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.benefits .benefits_list .benefits_list_item a{
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #041E4F;
+    font-family: Nunito-BoldItalic, sans-serif;
+    transition: 0.4s;
+}
+.benefits .benefits_list .benefits_list_item a:hover{
+    color: #3FD0C9;
+}
+.benefits .benefits_list .benefits_list_item i{
+    font-size: 18px;
+    color: #3FD0C9;
+    margin-left: 5px;
+}
+.benefits .benefits_list .benefits_list_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Css OurPartners*/
+.OurPartners{
+    padding: 65px 0;
+}
+.OurPartners .col.img-hover{
+    position: relative;
+    height: fit-content;
+}
+.OurPartners h2.title_abroad{
+    margin-bottom: 50px;
+}
+.over_goc_img{
+    width: 100%;
+}
+.over_lay_img{
+    width: 100%;
+    display: none;
+}
+.img-hover:hover .over_goc_img{
+    display: none;
+}
+.img-hover:hover .over_lay_img{
+    display: block;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 8%;
+}
+a.carousel-control-next {
+    margin-right: 25px;
+}

@@ -1,0 +1,80 @@
+
+/*css hero*/
+.hero{
+    position: relative;
+}
+.hero .hero-carousel-caption{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
+.hero .hero-carousel-caption h3{
+    font-size: 34px;
+    line-height: 45px;
+    font-family: Montserrat-Bold, sans-serif;
+    color: #ffff;
+    margin-bottom: 47px;
+    width: 623px;
+}
+.hero .hero-carousel-caption p{
+    max-width: 646px;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: Nunito-SemiBold, sans-serif;
+    color: #041E4F;
+    margin-bottom:41px;
+}
+.hero .hero-carousel-caption a.seeCars{
+    background-color: #041E4F;
+    color: #fff;
+    font-size: 20px;
+    font-family: Nunito-Bold, sans-serif;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 20px;
+    display: inline-block;
+    transition: 0.4s;
+}
+.hero .hero-carousel-caption a.seeCars:hover{
+    opacity: 0.8;
+}
+img.img-slide{
+    width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-image: unset;
+    width: 8%!important;
+}
+.carousel-control-prev-icon.k-icon i,
+.carousel-control-next-icon.k-icon i{
+    font-size: 25px;
+    background: #EBEBEB;
+    padding: 6px 12px;
+    border-radius: 300px;
+}
+.carousel-indicators.k-nut{
+    margin-right: 0%;
+    margin-left: 95%;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #DADADA;
+    background-color: transparent;
+    opacity: 1;
+    margin-left: 10px;
+}
+.carousel-indicators li.active{
+    background-color: #DADADA;
+    transform: scale(1.5);
+    border: none;
+}
+.carousel-indicators{
+    display: block;
+}
+.carousel-indicators li{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}

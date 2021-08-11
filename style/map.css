@@ -1,0 +1,26 @@
+
+.map{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 0 65px 0;
+}
+.map:after{
+    width: 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    /* bottom: 10%; */
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    background-color: #3fd0c9;
+    z-index: 2;
+}
+.map iframe{
+    padding-bottom: 65px;
+}

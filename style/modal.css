@@ -1,0 +1,162 @@
+.box{
+    position: absolute;
+    z-index: 123123;
+}
+.box input.hidden{
+    visibility: hidden;
+    margin-left: -14px;
+}
+.modal-show {
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.modal-show-inner {
+    position: relative;
+    margin: 150px auto 20px;
+    max-width: 600px;
+    width: 80%;
+    color: #fff;
+    background: #f6f9f7;
+    padding: 50px 30px;
+}
+.modal-show-inner label{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 450%;
+    line-height: 25px;
+    top: -12.5px;
+    right: -12.5px;
+    cursor: pointer;
+}
+input:checked ~ .modal-show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.box .content{
+    padding-bottom: 30px;
+}
+.box h2.title-modal {
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box p.des-title {
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 25px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.box .content .k-form-control{
+    margin-bottom: 10px;
+}
+.box .content input{
+    width: 80%;
+    padding: 10px 15px;
+    border: 1px solid #c7c6c6;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    background: #e8e5e5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box .content a.k-btn{
+    display: block;
+    width: 80%;
+    background-color: #1f1f1f;
+    text-align: center;
+    cursor: grab;
+    border: none;
+    padding: 10px 0;
+    outline: none;
+    color:#fff;
+    font-weight: bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.box .content a.k-btn:hover{
+    background-color: #000000;
+}
+.box a.cancel{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    margin-top: 6%;
+    display: inline-block;
+    transition: 0.4s;
+    border-bottom: 2px solid #000000;
+}
+.box a.cancel:hover{
+    opacity: 0.8;
+}
+.modal-show-inner .close{
+    outline: none!important;
+    box-shadow: none!important;
+    color: #77777A;
+    padding: 0 7px;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal-show-inner .close:hover{
+    color: black!important;
+}
+.close.k-close{
+    color: #77777A!important;
+    opacity: 1!important;
+    font-weight: normal;
+}
+@media screen and (max-width: 480px){
+    .modal-show-inner {
+        padding: 30px 15px 0 15px;
+    }
+    .box h2.title-modal {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+    .box p.des-title {
+        font-size: 12px;
+        padding: 0 7px;
+    }
+    .box .content input {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 8px 15px;
+    }
+    .box .content button.k-btn {
+        width: 100%;
+    }
+    .box .content button.k-btn {
+        font-size: 13px;
+    }
+    .box .content input {
+        font-size: 14px;
+    }
+    .box a.cancel {
+        font-size: 13px;
+    }
+    .box .content{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
